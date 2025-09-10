@@ -13,8 +13,28 @@ Este projeto é uma API RESTful desenvolvida como parte de uma atividade acadêm
 
 - O projeto está organizado em uma estrutura modular para facilitar manutenção e escalabilidade:
 
-![alt text](<ChatGPT Image 10 de set. de 2025, 11_05_19.png>)
-
+```
+/project-root
+├── src
+│   ├── model
+│   │   ├── modelProduto.js
+│   │   │   # Lógica de manipulação dos dados de produtos
+│   │   ├── modelCliente.js
+│   │   │   # Lógica de manipulação dos dados de clientes
+│   ├── controller
+│   │   ├── produtosController.js
+│   │   │   # Controladores para requisições de produtos
+│   │   ├── clientesController.js
+│   │   │   # Endpoints para produtos
+│   ├── routes
+│   │   ├── produtosRoutes.js
+│   │   │   # Endpoints para clientes
+│   │   ├── clientesjson
+├── package.json
+├── server.js
+├── produtos.json
+└── clientes.json
+```
 ## Descrição das Pastas e Arquivos
 - src/: Contém o código-fonte da aplicação, organizado em camadas (Model, Controller, Routes).
 - model/: Gerencia a interação com os dados armazenados nos arquivos produtos.json e clientes.json, implementando operações CRUD para produtos e clientes.
