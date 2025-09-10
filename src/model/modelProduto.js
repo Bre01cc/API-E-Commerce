@@ -79,13 +79,10 @@ const deletarProduto = (id) => {
     }
 }
 const alterarProdutos = (id, newDados) => {
- 
     let posicao = produtos.findIndex(produtos => produtos.id === id)
-    let manterId = id
     produtos.splice(posicao, 1);
-    const produto = { manterId, ...newDados }
+    const produto = {id, ...newDados }
     produtos.splice(posicao, 0,produto)
-    
     return produtos
 }
 const alterarParcialmente = (id, dados) => {

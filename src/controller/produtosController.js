@@ -55,7 +55,7 @@ const produtoDelete = (req, res) => {
     }
 }
 const alterarProdutos = (req, res) => {
-    const id = parseInt(req.params.id);
+    const identificador = parseInt(req.params.id);
 
     const { nome, descricao, preco, categoria, estoque, ativo } = req.body
 
@@ -64,7 +64,7 @@ const alterarProdutos = (req, res) => {
             mensagem: "Envie todas as informações do produto"
         })
     } else {
-        const produto = modelProdutos.alterarProdutos({ nome, descricao, preco, categoria, estoque, ativo })
+        const produto = modelProdutos.alterarProdutos(identificador,{ nome, descricao, preco, categoria, estoque, ativo })
         return res.status(200).json(produto);
     }
 }
