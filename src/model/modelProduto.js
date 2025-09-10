@@ -69,7 +69,7 @@ const creatProduto = (newProdutos) => {
 }
 
 
-const deletarCliente = (id) => {
+const deletarProduto = (id) => {
     if (produtos.find(produtos => produtos.id === id)) {
         let i = produtos.findIndex(produtos => produtos.id === id)
         produtos.splice(i, 1);
@@ -79,20 +79,22 @@ const deletarCliente = (id) => {
     }
 }
 const alterarProdutos = (id, newDados) => {
+ 
     let posicao = produtos.findIndex(produtos => produtos.id === id)
-
+    let manterId = id
     produtos.splice(posicao, 1);
-    const produto = { id, ...newDados }
-    produtos.splice(posicao, 0, client)
-
+    const produto = { manterId, ...newDados }
+    produtos.splice(posicao, 0,produto)
+    
     return produtos
 }
-const alterarParcialmente = (id, produtela) => {
+const alterarParcialmente = (id, dados) => {
+    
     const posicao = produtos.findIndex(produtos => produtos.id === id)
 
     produtos[posicao] = {
         ...produtos[posicao],
-        ...produtela
+        ...dados
     }
     return produtos[posicao]
 }
@@ -107,6 +109,6 @@ module.exports = {
     findProdNome,
     alterarProdutos,
     creatProduto,
-    deletarCliente,
+    deletarProduto,
     alterarParcialmente
 }

@@ -5,12 +5,12 @@ const app = express()
 
 
 const userRoutes = require('./src/routes/clientRouters');
+const produtoRouter = require('./src/routes/produtosRouters');
 
 
 app.use(express.json())
 //Definir a porta em que o servidor irá escutar
 const porta = 8000;
-
 //http://localhost:8000/ 
 //Testando a requisição do servidor
 app.get('/', (req, res) => {
@@ -18,6 +18,7 @@ app.get('/', (req, res) => {
 
 })
 app.use('/api/users',userRoutes)
+app.use('/api/produtos',produtoRouter)
 
 //listen que faz o servidor ouvir requisições de uma porta que nesse caso é a porta 8000
 app.listen(porta,() =>{
