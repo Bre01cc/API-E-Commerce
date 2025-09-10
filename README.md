@@ -1,4 +1,4 @@
-API de Gerenciamento de Produtos e Clientes
+# API de Gerenciamento de Produtos e Clientes
 ## Sobre
 Este projeto é uma API RESTful desenvolvida como parte de uma atividade acadêmica na disciplina de Back-end. A API permite o gerenciamento completo de um catálogo de produtos e clientes, oferecendo operações de criação, leitura, atualização e exclusão (CRUD) para ambos.
 
