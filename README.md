@@ -25,25 +25,32 @@ Este projeto é uma API RESTful desenvolvida como parte de uma atividade acadêm
 -clientes.json: Armazena os dados dos clientes, funcionando como um banco de dados simples.
 ## Imagens das requisições do produto
 
-### Get buscar por ID
+### Get 
+- Buscar por ID
 <img width="1454" height="863" alt="image" src="https://github.com/user-attachments/assets/60e351c7-9719-460a-b37e-ffc6c6bd8451" />
 
-### Get buscar todos os produtos
+### Get
+- Buscar todos os produtos
 <img width="1465" height="862" alt="image" src="https://github.com/user-attachments/assets/ee3713b6-98f6-4511-aa9c-9b6626e19230" />
 
-### Get buscar por nome
+### Get 
+- Buscar por nome
 <img width="1469" height="801" alt="image" src="https://github.com/user-attachments/assets/c56895b7-faac-4b01-ae94-a07663bfb1c5" />
 
-### Post para cadastrar novo produto
+### Post 
+- Para cadastrar novo produto
 <img width="1466" height="762" alt="image" src="https://github.com/user-attachments/assets/6ba689fa-5840-45fe-8f62-046a9852998f" />
 
-### Put para atualizar todoas as informações do produto
+### Put 
+- Para atualizar todoas as informações do produto
 <img width="1470" height="716" alt="image" src="https://github.com/user-attachments/assets/0098cd81-11d5-410e-a88c-aebcdb233cc2" />
 
-### Pach para alterar parcialmente
+### Pach 
+- Para alterar parcialmente
 <img width="1474" height="710" alt="image" src="https://github.com/user-attachments/assets/4778c5b3-c744-44c2-bf71-ee4bb2be9c8b" />
 
-### Delete
+### Delete 
+- Para remover o item
 <img width="1478" height="857" alt="image" src="https://github.com/user-attachments/assets/4f8f7923-e42c-48f7-baab-c9665577dd4f" />
 
 ## Autor
